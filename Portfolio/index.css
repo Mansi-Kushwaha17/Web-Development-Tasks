@@ -1,0 +1,482 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+body{
+   background: #0f0f0f;
+}
+.header{
+    /* margin: 10px; */
+   top:0;
+   left:0;
+   width: 100%;
+   padding: 20px 10%;
+   background: transparent;
+
+    position: fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+   
+    background-color: #111111;
+    
+
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:default;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+.navbar>a{
+    display: inline-block;
+    font-size: 25px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    margin-left: 45px;
+    transition:.3s;
+
+}
+
+.navbar>a:hover{
+    color:#0ef;
+}
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    /* background: url("Mansi_image.png"); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #6C3CC9;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 45px;
+       /* box-shadow: 0 0 25px #fff */
+           box-shadow:0 0 5px cyan, 0 0 25px cyan,0 0 40px cyan;
+    
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   
+     position: relative;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #0ef;
+}
+.home-content p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.home-content>h3>span {
+    color: #0ef;
+    line-height:2
+     rem;
+    font-size: 50px;
+    font-weight: 700;
+
+  
+} 
+.home-content>h3:nth-of-type(2){
+      margin-bottom: 30px;
+}
+.home-sci a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius:50%;
+    font-size:20px;
+    color:#0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow:0 0 20px #0ef;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color:#081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn:hover{
+    box-shadow:0 0 5px cyan, 0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+    
+}
+.about {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 10%;
+}
+
+.about-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+      color: #fff;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+      color: #fff;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0ef;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+/* ===== Skills Section ===== */
+
+.skills {
+    padding: 80px 10%;
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.sub-title span {
+    color:#0ef;
+}
+
+.skills_ {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+}
+
+
+.skills_ > div {
+    padding: 40px;
+    min-height: 280px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.skills_ > div:hover {
+    transform: translateY(-10px);
+}
+
+.skills_ i {
+    font-size: 50px;
+    color:#0ef;
+    margin-bottom: 20px;
+}
+
+.skills_ h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.skills_ p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0ef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.read:hover {
+    background: #0ef;
+    color: black;
+    box-shadow:0 0 5px cyan, 0 0 25px cyan,0 0 40px cyan;}
+
+.pro{
+        color: #0ef;
+}
+/* ===== Projects Section ===== */
+
+.project {
+    padding: 80px 10%;
+    /* background: black; */
+}
+
+.project > h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.project > h2 span {
+    color: #0ef;
+}
+
+/* Major Projects */
+
+.major_project h3,
+.minor_project h3 {
+    font-size: 32px;
+    color: #0ef;
+    margin-bottom: 25px;
+}
+
+.major_project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.project-card {
+    background: black;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 0 55px;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h4 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+/* Minor Projects */
+
+.minor_project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.minor_project h3 {
+    grid-column: 1 / -1;
+}
+/* contact details */
+ /* ===== Contact Section ===== */
+
+#contact {
+    padding: 80px 10%;
+    /* background: #F3EEFC; */
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.contact h2 span {
+    color: #0ef;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Contact Information */
+
+.contact-info h3 {
+    font-size: 32px;
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0ef;
+    font-weight: 600;
+}
+
+/* Contact Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #0ef;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form .btn {
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color:wheat;
+}
+.contact-form input,
+.contact-form textarea {
+    color: white;
+}
+#menu-icon {
+    font-size: 40px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+     
+
+       .navbar {
+        display: none ;
+    }
+     #menu-icon {
+        display: block ;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction:column;
+        position:absolute;
+        top:100%;
+        right: 10%;
+        gap: 15px;
+       
+    }
+    .navbar.active a {
+    margin-left: 0;
+}
+
+}

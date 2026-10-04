@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery of Nature </title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1 class="head">Images Gallery of Nature</h1>
+     <div class="full-img" id="fullimg">
+      <img src="/images/flowers.webp" id="images">
+      <span onclick="closeFullimg()">X</span>
+     </div>
+
+    <div class="img-gallery">
+        <img  onclick="openFullimg(this.src)"     src="/images/waterfall.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/forest.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/greenland Scape.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/lake.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/night sky.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/ocean.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/RW7567.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/sunset.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/flowers.webp"/>
+        <img  onclick="openFullimg(this.src)"   src="/images/tropical beech.webp"/>
+   
+    </div>
+
+    <script>
+        let fullimg= document.getElementById('fullimg');
+        let images=document.getElementById('images');
+        function openFullimg(pic){
+            fullimg.style.display='flex';
+            images.src=pic;
+        }
+        function closeFullimg(){
+          fullimg.style.display='none';   
+        }
+    
+
+    </script>
+</body>
+</html>
